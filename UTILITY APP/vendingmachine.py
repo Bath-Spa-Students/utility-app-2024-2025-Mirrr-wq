@@ -21,7 +21,7 @@ items = {
 # this code will display the items as per menu for the user
 
 def display_items():
-    print("\n !!! WELCOME TO MY VENDING MACHINE, HERE IS THE MENU. !!!")
+    print("\n !!! WELCOME TO MIR'S VENDING MACHINE, HERE IS THE MENU. !!!")
     for category, category_items in items.items():
         print(f"\n{category}:")
         print("-" * 30)
@@ -51,7 +51,7 @@ def get_choice():
             choice = int(input("\nEnter item code (1-10): "))
 
             # this code will check if the selected item number is there on the list
-            
+
             for category_items in items.values():
                 if choice in category_items:
                     return choice, category_items[choice]
